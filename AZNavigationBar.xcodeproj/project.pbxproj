@@ -14,6 +14,8 @@
 		63063F042236504A00A63645 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63063F022236504A00A63645 /* LaunchScreen.storyboard */; };
 		63063F0F2236504A00A63645 /* AZNavigationBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63063F0E2236504A00A63645 /* AZNavigationBarTests.swift */; };
 		63063F1A2236504A00A63645 /* AZNavigationBarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63063F192236504A00A63645 /* AZNavigationBarUITests.swift */; };
+		63063F282236716C00A63645 /* SizeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63063F272236716C00A63645 /* SizeManager.swift */; };
+		63063F462237A6E000A63645 /* AZNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63063F452237A6E000A63645 /* AZNavigationBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		63063F152236504A00A63645 /* AZNavigationBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AZNavigationBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63063F192236504A00A63645 /* AZNavigationBarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AZNavigationBarUITests.swift; sourceTree = "<group>"; };
 		63063F1B2236504A00A63645 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63063F272236716C00A63645 /* SizeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeManager.swift; sourceTree = "<group>"; };
+		63063F452237A6E000A63645 /* AZNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AZNavigationBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				63063F002236504A00A63645 /* Assets.xcassets */,
 				63063F022236504A00A63645 /* LaunchScreen.storyboard */,
 				63063F052236504A00A63645 /* Info.plist */,
+				63063F272236716C00A63645 /* SizeManager.swift */,
+				63063F452237A6E000A63645 /* AZNavigationBar.swift */,
 			);
 			path = AZNavigationBar;
 			sourceTree = "<group>";
@@ -256,7 +262,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63063F462237A6E000A63645 /* AZNavigationBar.swift in Sources */,
 				63063EFC2236504700A63645 /* ViewController.swift in Sources */,
+				63063F282236716C00A63645 /* SizeManager.swift in Sources */,
 				63063EFA2236504700A63645 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

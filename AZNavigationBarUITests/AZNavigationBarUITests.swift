@@ -27,8 +27,34 @@ class AZNavigationBarUITests: XCTestCase {
     }
 
     func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        let app = XCUIApplication()
+        app.otherElements.containing(.navigationBar, identifier:"AZNavigationBar.View").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element(boundBy: 0).children(matching: .other).element(boundBy: 2).sliders["10%"]/*@START_MENU_TOKEN@*/.press(forDuration: 1.4);/*[[".tap()",".press(forDuration: 1.4);"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        
+        let pushButton = app.buttons["Push"]
+        pushButton.tap()
+        pushButton.tap()
+        app.sliders["10%"].swipeRight()
+        app.sliders["24%"]/*@START_MENU_TOKEN@*/.press(forDuration: 1.2);/*[[".tap()",".press(forDuration: 1.2);"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        app.sliders["43%"]/*@START_MENU_TOKEN@*/.press(forDuration: 1.3);/*[[".tap()",".press(forDuration: 1.3);"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        pushButton.tap()
+        pushButton.tap()
+
     }
 
+    func testPlanB() {
+        
+        let app = XCUIApplication()
+        app.otherElements.containing(.navigationBar, identifier:"AZNavigationBar.View").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element(boundBy: 0).children(matching: .other).element(boundBy: 2).sliders["10%"]/*@START_MENU_TOKEN@*/.press(forDuration: 0.9);/*[[".tap()",".press(forDuration: 0.9);"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        
+        let pushButton = app.buttons["Push"]
+        pushButton.tap()
+        pushButton.tap()
+        app.sliders["25%"]/*@START_MENU_TOKEN@*/.press(forDuration: 1.5);/*[[".tap()",".press(forDuration: 1.5);"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        app.sliders["10%"]/*@START_MENU_TOKEN@*/.press(forDuration: 1.1);/*[[".tap()",".press(forDuration: 1.1);"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        pushButton.tap()
+        pushButton.tap()
+        pushButton.tap()
+        
+    }
 }
